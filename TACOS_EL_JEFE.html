@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACOS "EL JEFE"</title>
+</head>
+<body>
+    <header> 
+        <H1>Tacos el jefe</H1> 
+
+    </header>
+    
+    <img src="./cambiar.jpg" alt="logo tacos" width="300PX"
+    height="300px">
+    
+    <br>
+
+    <section>
+        <h2>Menú</h2>
+        <h3>Tacos grandes</h3>
+        <p>Todos incluyen nopales y cebollas</p>
+        <ul>
+            <li>Barbacoa ................... $25</li>
+            <li>Bisteck  ................... $25</li>
+            <li>Pastor   ................... $25</li>
+            <li>Chorizo  ................... $25</li>
+            <li>Suaderp  ................... $25</li>
+        </ul>
+
+        <br>
+
+        <h3>Tacos pequeños</h3>
+        <p>Con cilantro y cebollas</p>
+        <ul>
+            <li> Barbacoa ................... $15 </li>
+            <li> Bisteck  ................... $15 </li>
+            <li> Pastor   ................... $15 </li>
+            <li> Chorizo  ................... $15 </li>
+            <li> Suadero  ................... $15 </li>
+        </ul>
+
+        <br>
+
+        <h3>Especiales</h3>
+        <p>Haz tu combo con refresco por 10 pesos más</p>
+        <dl>
+            <dt><b>Labrador</b> ................... $45</dt>
+            <dd>-Tortilla maiz con pollo asado</dd>
+            <dt><b>Pastor aleman</b> ................... $50</dt>
+            <dd>-Tortilla de harina con carne de res y queso</dd>
+            <dt><b>Pug</b> ................... $45</dt>
+            <dd>-Tortilla de maiz con chuleta</dd>
+            <dt><b>adoptado</b></dt>
+            <dd>-Tortilla de maiz con Pastor</dd>
+        </dl>
+
+        <br>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Ubicación</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Horarios</th>
+
+            </tr>
+            
+            <tr>
+                <td>Centro</td>
+                <td> <a href="https://goo.gl/maps/9aKcnYjo8v4rGvgV6" target="_blank" >calle perruna #141 col. El perro feliz</a></td>
+                <td>L - D 24 hrs</td>
+            </tr>
+
+            <tr>
+                <td>Sur</td>
+                <td> <a href="https://goo.gl/maps/ASBjmjQZTrWGkRFB8" target="_blank">Av. ladrido #325 Col.villa perruna</a></td>
+                <td>L-D 5pm a 3 am</td>
+            </tr>
+
+            <tr>
+                <td>Norte</td>
+                <td> <a href="https://goo.gl/maps/iw4h2qeiSgAf6a188" target="_blank">Calle el Jefazo Col. Canina </a></td>
+                <td>M-D 5pm a 3am</td>
+            </tr>
+
+            
+
+        </table>
+
+
+        <br>
+    </section>
+
+    <hr>
+    <section>
+
+        <h2>Pedidos</h2>
+        
+        <h3>Haz tu pedido aquí</h3>
+
+        <form action="">
+                <p>¿De que taqueria quiere?</p>
+                <select>
+                    <option value="Centro">Centro</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sur">Sur</option>
+                </select>
+
+                <p>¿De que quieres?</p>
+
+                <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck">
+            <label for="Bisteck">Bisteck</label>
+            <input type="number" id="BisteckNumber" name="BisteckNumber" placeholder="¿Cuantos mi guero?">
+            <br>
+            <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+            <label for="Pastor">Pastor</label>
+            <input type="number" id="PastorNumber" name="PastorNumber" placeholder="¿Cuantos mi guero?">
+            <br>
+            <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+            <label for="Chorizo">Chorizo</label>
+            <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuantos mi guero?">
+            <br>
+            <input type="checkbox" name="Suadero" id="Suadero" value="Suadero">
+            <label for="Suadero">Suadero</label>
+            <input type="number" id="SuaderoNumber" name="SuaderoNumber" placeholder="¿Cuantos mi guero?">
+            
+            <br><br>
+
+            <label for="Nombre:">Nombre</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cual es tu nombre">
+            
+            <br>
+
+            <label for="Telefono:">Telefono</label><br>
+            <input type="text" id="Telefono name="Telefono" placeholder="¿Cual es tu telefono">
+
+            <br>
+
+            <label for="Direccion:">Direccion</label><br>
+            <input type="text" id="Direccion" name="Direccion" placeholder="¿A donde enviamos tu pedido">
+
+            <br><br>
+
+            <button type="submit">Enviar Pedido</button>
+
+            </form>
+
+    </section>
+
+    
+    
+
+</body>
+</html>
