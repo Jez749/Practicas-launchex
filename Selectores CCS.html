@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <!--para referenciar un archivo css fuera de el codigo y poder usarlo hay que poner el siguiente
+    codigo <link rel="stylesheet" href="./3.-fondos" esta ultima parte el HREF indicara donde esta el archivo-->
+
+    <style>
+
+        /*estilos, todo lo que empieza con 
+        "." es una class y # es un id*/
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: aqua;
+        }
+
+        p{
+            color: red;
+            text-align: center;
+        }
+
+        #titulo{
+            color: rgb(176, 91, 209);
+            text-align: right;
+        }
+
+        .izquierda{
+            color: green;
+
+        }
+
+        p.izquierda{
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        .contraste{
+            background-color: black;
+        }
+
+         h1, h2, p{
+            font-weight: bold;
+         }
+
+         /*color*/
+
+         p{
+            font-size: 20px;
+         }
+
+         .colorRojo{
+            color: red;
+         }
+
+         .colorRGB{
+            color: rgb(93, 113, 218);
+         }
+
+         .colorRGBA{
+            color: rgba(93, 217, 94, 0.6);
+         }
+
+         .colorHEX{
+            color: #ee43e3;
+         }
+
+         .colorHSL{
+            color: hsl(30, 68%, 31%);
+         }
+
+         /*Fondo*/
+
+         section{
+            height: 400px;
+         }         
+
+         div{
+            height: 400px;
+         }
+
+         .fondoColor{
+            background-color: #0f6666;
+         }
+
+         .fondoOpacidad{
+            background-color: #5d0c0c;
+            opacity: 0.6;
+         }
+
+         .fondoImagen{
+            background-image: url("../Practicas_html/Fondo1.jpg");
+         }
+
+         .fondoRepetidoX{
+            background-image: url("../Practicas_html/Fondo2.jpg");
+            background-repeat: repeat-x;
+         }
+
+         .fondoRepetidoY{
+            background-image: url("../Practicas_html/Fondo2.jpg");
+            background-repeat: repeat-y;
+
+         }
+
+         .fondoNoRepetido{
+            background-image: url("../Practicas_html/Fondo3.jpg");
+            background-repeat: no-repeat;
+         }
+
+         .fondoPosicion{
+            background-image: url("../Practicas_html/Fondo2.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+         }
+
+         .fondoCompleto{
+            background-image: url("../Practicas_html/Fondo4.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+
+         /*Texto*/
+
+         
+
+
+         /* <--asi se agrgan conmentarios en CCS--> */      
+            
+
+        
+                     
+    </style>
+         
+</head>
+<body>
+
+    <!-- en h2 el valor id se enlazado con el codigo 
+    de ccs titulo pero este es "mayor" en rango que class
+    es por eso que toma el valor de id en vez de class
+    si dentro de las etiquetas no ponemos nigun selector 
+    este tomara los valores de los selectores por defecto
+    que hayamos programado en el CCS -->
+
+    <section>
+
+    <h1>header simple</h1>
+    <h2 id="titulo" class="izquierda">hader con id titulo</h2>
+    <p>Parrafo simple</p>
+    </section>
+
+    <hr>
+
+   
+    <!-- en este caso los valores de CCS dentro de las etiquetas que son class tomara estos valores en vez
+    de los por defecto, el la etiqueta h3 se ve el ejemplo, que se pueden colorcar varios selectores para 
+    esa etiquetas o la que se considere dependiendo nuestro caso -->
+    
+    <section>
+    <h3 class="izquierda">Prueba valor Class Header</h3>
+    <p class="izquierda">Prueba de class izquierda</p> 
+    <h3 class="izquierda contraste">prueba multiples class en parrafos</h3>
+    </section>
+
+    <hr>
+    
+    <section>
+    <h3>Codigo de colores CCS</h3>
+
+    <!--en este ejemplo implemente las class de colores que escribi en CCS y lo combine con las class izquierda
+    debido a que anterior mente habias puesto una class .izquierda color verde al pasar las letras a la 
+    izquierda se ponian color verde pero si acomodamos jerárquica el codigo class se mantenien los valores
+    que agrgamos el CCS por ejemplo primero color y luego la pocision, si lo hacemos al reves en mi caso por 
+    tener primero el .izquierda verde en el CCS este se pondria las letras Color verde, no resptando el color que yo 
+    quiero-->
+
+    <p class="colorRojo izquierda">Color Rojo</p>
+    <p class="colorRGB izquierda">Color RGB</p>
+    <p class="colorRGBA izquierda">Color RGBA</p>
+    <p class="colorHEX izquierda">Color HEX</p>
+    <p class="colorHSL izquierda">Color HSL</p>
+
+    </section>
+
+    <hr>
+
+    <h3>Fondos</h3>
+    
+    <section class="fondoColor"></section>
+    <div class="fondoOpacidad"></div>
+    <section class="fondoImagen"></section>
+    <section class="fondoRepetidoX"></section>
+    <section class="fondoRepetidoY"></section>
+    <section class="fondoNoRepetido"></section>
+    <section class="fondoPosicion"></section>
+    <section class="fondoCompleto"></section>
+    
+    
+
+    
+</body>
+</html>
